@@ -23,6 +23,7 @@ body {
   background-color: var(--color-neutral-Dark-Blue);
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 main {
   display: flex;
