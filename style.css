@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  /* Colors */
+  --color-Primary-Light-Cyan: hsl(193, 38%, 86%);
+  --color-Primary-Neon-Green: hsl(150, 100%, 66%);
+  --color-neutral-Grayish-Blue: hsl(217, 19%, 38%);
+  --color-neutral-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --color-neutral-Dark-Blue: hsl(218, 23%, 16%);
+  /* Fonts */
+  --font-family: "Manrope";
+  --font-size: 28px;
+  --font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 0px;
+  background-color: var(--color-neutral-Dark-Blue);
+
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: var(--color-neutral-Dark-Grayish-Blue);
+  max-width: 30rem;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 1rem;
+}
+.advice-id {
+  color: var(--color-Primary-Neon-Green);
+  text-transform: uppercase;
+  word-spacing: 0.4rem;
+}
+.advice-text {
+  margin: 20px auto 0;
+  font-size: var(--font-size);
+  width: 100%;
+  color: var(--color-Primary-Light-Cyan);
+  font-weight: var(--font-weight);
+}
+.divider {
+  margin: 1rem 0 2rem;
+  background-size: 100% 100%;
+  width: 100%;
+}
+/* Dice */
+#dice {
+  background-color: var(--color-Primary-Neon-Green);
+  border-radius: 50%;
+  padding: 0.9rem 1rem 0.75rem;
+  border: none;
+  margin: 0 auto -2.8rem;
+}
+#dice img {
+  width: 1.5rem;
+}
+#dice:hover {
+  box-shadow: 0 0 2.5rem var(--color-Primary-Neon-Green);
+  cursor: pointer;
+}
+@media (min-width: 480px) {
+  main {
+    margin: auto;
+  }
+}
