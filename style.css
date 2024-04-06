@@ -33,7 +33,7 @@ main {
   justify-content: center;
   background-color: var(--color-neutral-Dark-Grayish-Blue);
   max-width: 30rem;
-  margin: 0 1.5rem;
+  margin:0 1.5rem;
 }
 .advice-id {
   color: var(--color-Primary-Neon-Green);
